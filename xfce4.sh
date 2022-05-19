@@ -10,7 +10,13 @@ sudo apt-get update > /dev/null 2>&1
 echo "===================================="
 echo "Install Chrome"
 echo "===================================="
-sudo apt install chrome -y > /dev/null 2>&1
+sudo apt install wget -y > /dev/null 2>&1
+wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+sudo dpkg -i google-chrome-stable_current_amd64.deb > /dev/null 2>&1
+echo "===================================="
+echo "Install Firefox"
+echo "===================================="
+sudo apt install firefox -y > /dev/null 2>&1
 echo "===================================="
 echo "Install RDP"
 echo "===================================="
